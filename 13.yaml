@@ -1,9 +1,9 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Vhost
 metadata:
-  name: datamgmt-dev-vhost
-  namespace: rabbitmq-dev
+  name: my-vhost
 spec:
+  namespace: rabbitmq-dev 
   name: dev1
-  rabbitmqClusterReference: 
+  rabbitmqClusterReference:
     name: rabbitmq-dev
